@@ -1,2 +1,11 @@
 language: node_js
 node_js: node
+deploy:
+  provider: heroku
+  api_key:
+    secure: ONmPtdTCh16bwQUqKc7W+098GRuIrBWOrFeozhEvhG4KEUCgSfL/ov0lZmr+Wlyvanpugv/pXXBd/Pp/l/qkvR6ygr3tgdx3niGcOHk++B85M00nfQg3SoTJk9Rm8qrHnRaTn1tcHx2EEfT9HjlHgjzAQS0EKb7S2gQDa6Ma7MsgZxHirOcpd+RBl91XW+SREq5rn0VpORzZGilCqYvgSzKaAbIU7r0xfMgITSwJN8D0LeUiWRzbXk00N2VGOZGbIGAQS30F5Szpu3+MxxONlWU82t/WTAZKqJDcdXbFP6l7zqulxWw3TkbQ5Tp2htqTHVLFftbttDaVxRmQzQFh9znWQYKcyHW2i3wTx4eluU6oyBf4uL+rpN4H8jan+CRZnngzjZu/NBvdIL2qVVuO+L1d6XswiOam6zCBE0b8EPa/BAxDyLL8gRh+k/Hay3EgqMfh4pBKcUGsRKhUAxIRwieuauDB+XnNC+wZchzK261QUnsI6m4WOVt0N+gw6q3DhnbvS/f7xdpy+BVTn4qivrZObb6roT3x/gOAIu1Jm1CCQSuGoasJX0vlHxrEOD88eTofTjeGfmHVYaRRHAFhg1ScSs7aKpxD4MG/JBtMq2a4vPTskTk4k2FI3guyKWst1YolH6irf6UHwP4Rd1a7nrka5v0dw2QCYcbZRFVVWYI=
+  app: sbstravisheroku
+  on:
+    repo: shlomibe21/TravisHeroku
+    branch: main
+  skip_cleanup: 'true'
